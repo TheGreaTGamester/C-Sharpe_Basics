@@ -1,0 +1,40 @@
+using System;
+class EntryPoint
+{
+    static void Main()
+    {
+        string space = new string('-', 10);
+
+        int number = 5;
+        string word = "5";
+        char x = 'x';
+        float pi = 3.14f;
+
+        float integer = number;
+
+        //Also known as Type Casting : Using System Class
+        //Only works if both types are compatable!
+        //In this cause, the number will be rounded to the nearest lower integer
+        int floating = (int)pi;
+
+        Console.WriteLine(integer);
+        Console.WriteLine(floating);
+        Console.WriteLine(space);
+
+        //Conveting
+        //This changes the  string into a number
+        //This will only work if the string contains appropriate values, such as numbers
+        int stringedInterger = Convert.ToInt32(word);
+        Console.WriteLine(stringedInterger);
+        Console.WriteLine(space);
+
+        //Parsing : Method
+        int parsedString = int.Parse(word);
+        Console.WriteLine(parsedString);
+        Console.WriteLine(space);
+
+        //Diffrence bettwen Converting and Parsing
+        //Converting will give you a 0
+        //Parsing will give you an exception
+    }
+}
