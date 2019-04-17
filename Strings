@@ -1,0 +1,13 @@
+class EntryPoint
+    {
+        static void Main()
+        {
+            string username = "admin";
+
+            //Strings are immutable. They can never be changed!
+
+            //We use (Variable Name)[INDEX] to get specific charatcers of a string
+            System.Console.WriteLine(username[4]);
+
+        }
+    }
