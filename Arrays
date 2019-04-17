@@ -1,0 +1,43 @@
+using System;
+class Entrypoint
+{
+    static void Main()
+    {
+        //How to make an array
+        int[] number = new int[5];
+
+        number[0] = 10;
+        number[1] = 11;
+        number[2] = 12;
+        number[3] = 13;
+        number[4] = 14;
+
+        Console.WriteLine(number[0]);
+        Console.WriteLine(number[1]);
+        Console.WriteLine(number[2]);
+        Console.WriteLine(number[3]);
+        Console.WriteLine(number[4]);
+        
+        string[] fruit = new string[5];
+
+        fruit[0] = "Apple";
+        fruit[1] = "Orange";
+        fruit[2] = "Pear";
+        fruit[3] = "Banana";
+        fruit[4] = "Strawberry";
+
+        Console.WriteLine(fruit[0]);
+        Console.WriteLine(fruit[1]);
+        Console.WriteLine(fruit[2]);
+        Console.WriteLine(fruit[3]);
+        Console.WriteLine(fruit[4]);
+
+        //To get a specific character from a string array \/
+        Console.WriteLine(fruit[0][1]);
+        
+        //You ca change them this way \/
+        fruit[2] = "Kiwi";
+
+        Console.WriteLine(fruit[2]);
+    }
+}
