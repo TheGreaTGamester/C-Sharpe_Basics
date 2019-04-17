@@ -1,0 +1,62 @@
+using System;
+
+class EntryPoint
+
+{
+    static void Main()
+    {
+
+        //Can have both negative and positive numbers
+        sbyte minsByte = sbyte.MinValue;
+        sbyte maxsByte = sbyte.MaxValue;
+
+        Console.WriteLine(minsByte);
+        Console.WriteLine(maxsByte);
+
+        //Can only hold 1 byte, 8 bits : Can only have positive numbers
+        byte someByteNumber = 255;
+
+        byte minByte = byte.MinValue;
+        byte maxByte = byte.MaxValue;
+
+        Console.WriteLine(minByte);
+        Console.WriteLine(maxByte);
+
+        //Int can only hold up to 32 bits : 2^32
+        int someInteger = 265;
+    
+        int intMax = int.MaxValue;
+        int intMin = int.MinValue;
+
+        Console.WriteLine(intMax);
+        Console.WriteLine(intMin);
+
+
+        //Can only hold positive numbers
+        uint someUInteger = 5;
+       
+        uint minUint = uint.MinValue;
+        uint maxuint = uint.MaxValue;
+
+        Console.WriteLine(minUint);
+        Console.WriteLine(maxuint);
+
+        //Quick math \/
+        Console.WriteLine(Math.Pow(2, 32));
+
+        //Long can hold 64 bits : 2^64
+        long minLong = long.MinValue;
+        long maxLong = long.MaxValue;
+
+        Console.WriteLine(minLong);
+        Console.WriteLine(maxLong);
+
+        //Only hold positive intergers form the long function
+        ulong minuLong = ulong.MinValue;
+        ulong maxuLong = ulong.MaxValue;
+
+        Console.WriteLine(minuLong);
+        Console.WriteLine(maxuLong);
+
+    }
+}
