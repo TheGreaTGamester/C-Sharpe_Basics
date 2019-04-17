@@ -1,0 +1,41 @@
+using System;
+class EntryPoint
+{
+    static void Main()
+    {
+        string space = new string('-', 15);
+
+        //Building String through place holders & Interpolation & Concoctination
+
+        //Concoctination Method \/
+        string nameOfCharacter = "Bob";
+        string spellName = "Fireball";
+        int damageTaken = 100;
+
+        string damageReport = "The " + nameOfCharacter + " character took " + damageTaken + " damage from " + spellName;
+
+        Console.WriteLine(damageReport);
+        Console.WriteLine(space);
+
+        //Place Holder Method \/
+        //We use string.Format("Whater ever" , Now list the variables here you want to use)
+        //Each variable will have an index starting from 0 -> onward
+        //We add {Index #} to show where and what varabale we want in that specific spot
+        string damageReportV2 = string.Format("The {0} character took {1} damage from {2}", nameOfCharacter, damageTaken, spellName);
+        Console.WriteLine(damageReportV2);
+        Console.WriteLine(space);
+
+        //Excersize \/
+        string damaReportV21 = string.Format("The {0} character took {1} damage from {2}, and the charcter {0} is dead.", nameOfCharacter, damageTaken, spellName);
+        Console.WriteLine(damaReportV21);
+        Console.WriteLine(space);
+
+
+        //Interpolation Method \/
+        /*
+        string damageReportV3 = $"The {nameOfCharacter} character took {damageTaken} damage from {spellName}.";
+        Console.WriteLine(damageReportV3);
+        Much more readable and easier!
+        */
+    }
+}
