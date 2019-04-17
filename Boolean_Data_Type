@@ -1,0 +1,19 @@
+using System;
+    class EntryPoint
+    {
+        static void Main()
+        {
+
+        //Ctrl + r + r : Do this on a variable and rename it. It will change where ever it was used before
+
+        int firstNumber = 4;
+        int secondNumber = 6;
+
+        bool isTheCookieJarEmpty = true;
+
+        bool isTheFirstIntegerSmallerThanTheSecond = firstNumber < secondNumber;
+
+        System.Console.WriteLine(isTheFirstIntegerSmallerThanTheSecond);
+
+        }
+    }
