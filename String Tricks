@@ -1,0 +1,35 @@
+using System;
+class EntryPoint
+{
+    static void Main()
+    {
+        //So make a certian character repeat easily, do this \/
+        //Make a new string, choose a character, and then choose how many times you want it to appear.
+        string separator = new string('-', 10);
+
+        string fruitJuice = "Strawberry Juice";
+
+        //We use .Contrains to check if the string in this case being fruitJuice, has the specific string. 
+        //The value is returned as a boolean (T or F)
+        //Does destinguise between upper and lower case
+        Console.WriteLine(fruitJuice.Contains("f"));
+        Console.WriteLine(separator);
+
+        //Gives the Index of where a specific character was found \/
+        //.Index of tells us where in the string the char was founds!
+        //Only gets the index of the first time it sees that specific character
+        //Works with a string of character!
+        Console.WriteLine(fruitJuice.IndexOf("berry"));
+        Console.WriteLine(separator);
+
+        //Gives you the last Index of that specific character \/
+        //Works with a string of character!
+        Console.WriteLine(fruitJuice.LastIndexOf("berry"));
+        Console.WriteLine(separator);
+
+        //Taking the value of fruitJuice and setting it to Lowercase, then setting it back to the original variable.
+        bool containsStraw = fruitJuice.ToLower().Contains("straw");
+        //Excersize /\ \/
+        Console.WriteLine(containsStraw);
+    }
+}
