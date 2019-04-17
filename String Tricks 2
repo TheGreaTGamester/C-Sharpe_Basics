@@ -1,0 +1,23 @@
+using System;
+class EntryPoint
+{
+    static void Main()
+    {
+        int bigNumber = 1234567;
+
+        //We can change a integer into a string by using the .ToString().
+        //Then to chck if the int has a specific number in it, we can add .Containts('#') to the end of .ToString().
+        Console.WriteLine(bigNumber.ToString().Contains("5"));
+        Console.WriteLine(bigNumber.ToString().IndexOf("5"));
+        Console.WriteLine(bigNumber.ToString().LastIndexOf("5"));
+
+        string iLearn = "I am learning ";
+        string nameOfCourse = "C# Master course";
+
+        //To add string together, just concantente them \/
+        //Even though bigNumber is added to this line, it will still be treated as a string, we have to change it outselves if we want it to be a string.
+        string concantenated = iLearn + nameOfCourse + bigNumber;
+
+        Console.WriteLine(concantenated);
+    }
+}
