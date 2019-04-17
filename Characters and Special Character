@@ -1,0 +1,38 @@
+using System;
+using System.Text;
+
+class EntryPoint
+{
+    static void Main()
+    {
+        //Change the input and output encoding for the console. Used for special characters!
+        Console.InputEncoding = Encoding.UTF8;
+        Console.OutputEncoding = Encoding.UTF8;
+
+        /*
+          Use ASCII table / Or use the Unicode table for more symbols
+          Look at the "HX" for the code of a character
+        */
+
+        char theCharacterX = 'x';
+        Console.WriteLine(theCharacterX);
+
+        /*
+         When we want to output the symbol:
+
+            char (VARIABLE NAME) = '\u0000'
+            Check the ASCII for the HX code for the symbol
+            then replace the 0000 fomr \u0000 going starting from the left
+
+            Example below \/
+         */
+
+        //Using the ASCII table \/
+        char thePlusSign = '\u002B';
+        Console.WriteLine(thePlusSign);
+
+        //Using the Unicode table \/
+        char theSpecial = '\u00F6';
+        Console.WriteLine(theSpecial);
+    }
+}
