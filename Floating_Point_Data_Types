@@ -1,0 +1,43 @@
+using System;
+
+class EntryPoint
+{
+    static void Main()
+    {
+        //Data Type, Name, Value, Sufix
+        //Float only has precision of 7 numbers
+        //Can have 32 bits
+        float someFloatNumber = 3394738470479.14f; //Add "f" as sufix of float
+
+        Console.WriteLine(someFloatNumber.ToString("f"));
+
+        //Calculating circumference  of circle
+        float pi = 3.14f;
+        int radius = 5;
+        Console.WriteLine(pi * Math.Pow(radius, 2));
+
+        float fmax = float.MaxValue;
+        float fmin = float.MinValue;
+
+        Console.WriteLine(fmax.ToString("f"));
+        Console.WriteLine(fmin.ToString("f"));
+
+        //Double can have 64 bits
+        double doubleVariable = 2343.1234567543d; //Add "d" as sufix of double
+
+        double dmax = double.MaxValue;
+        double dmin = double.MinValue;
+
+        Console.WriteLine(dmax.ToString("f"));
+        Console.WriteLine(dmin.ToString("f"));
+
+        //Decimal can have 128 bits
+        decimal decimalVariable = 2545454.23456541234567123456m; //Add "m" as sufix of decimal
+
+        decimal deMax = decimal.MaxValue;
+        decimal deMin = decimal.MinValue;
+
+        Console.WriteLine(deMax.ToString("f"));
+        Console.WriteLine(deMin.ToString("f"));
+    }
+}
