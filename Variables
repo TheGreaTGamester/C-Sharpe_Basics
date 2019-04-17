@@ -1,0 +1,23 @@
+using System;
+
+namespace Variables
+{
+    class EntryPoint
+    {
+        static void Main()
+        {
+            //How to create a variable: Data Type , Name , Value
+            int age = 20;
+            string firstName = "Moe";
+            string freeSpace = " ";
+          
+            //Use Console.WriteLine to output onto the console and then skip to the next line.
+            Console.WriteLine(age);
+            Console.WriteLine(firstName);
+
+            Console.WriteLine(firstName + freeSpace + age);
+            Console.WriteLine(firstName + " " + age);
+
+        }
+    }
+}
